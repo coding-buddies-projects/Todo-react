@@ -1,82 +1,50 @@
-# Todo-react
-Edit the file to take a task:
-<br/>
-If you take a task write your name/nickname in [], and add the link to your github in (). Also add this emoji :clock5:.
-<br/>
-If the task was completed write "x" in [] instead of emoji.
-<br/>
-Example:
-<br/>
-1. - [ :clock5: ] Set up the initial React project structure - [Alex](https://github.com/aleksandramuraveva)
-1. - [x] Set up the initial React project structure - [Alex](https://github.com/aleksandramuraveva)
+# React + TypeScript + Vite
 
-# React To-Do Project Tasks
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-1. - [ :clock5: ] Set up the initial React project structure - [Alex](https://github.com/aleksandramuraveva)
-1. - [ ] Create App component logic - []()
-1. - [ ] Create ToDoList component logic - []()
-1. - [ ] Create Header component logic - []()
-1. - [ ] Create ToDoItem component logic - []()
-1. - [ ] Create AddToDo form component logic - []()
-1. - [ ] Create Footer component logic - []()
-1. - [ ] Create Filter component logic - []()
-1. - [ ] Create App component logic - []()
-1. - [ ] Create ThemeToggle component logic - []()
-1. - [ ] Style App component using CSS - []()
-1. - [ ] Style ToDoList component using CSS - []()
-1. - [ ] Style Header component using CSS - []()
-1. - [ ] Style ToDoItem component using CSS - []()
-1. - [ ] Style AddToDo form component using CSS - []()
-1. - [ ] Style Filter component using CSS - []()
-1. - [ ] Style Footer component using CSS - []()
-1. - [ ] Style ThemeToggle component using CSS - []()
-1. - [ ] Add local storage support to persist tasks - []()
-1. - [ ] Create a custom hook useLocalStorage for managing tasks - []()
-1. - [ ] Implement ContexApi to manage light/dark theme - []()
-1. - [ ] Implement filtering options (e.g., all, active, completed) - []()
-1. - [ ] Write unit tests for components and hooks - []()
-1. - [ ] Set up CI/CD pipeline for automated testing and deployment - []()
-1. - [ ] Optimize performance and improve accessibility - []()
-1. - [ ] Refactor codebase for better readability and maintainability - []()
-1. - [ ] Review and merge pull requests - []()
+Currently, two official plugins are available:
 
-## Aproximate structure
-structure might be different, just an example
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-```plaintext
-src/
-├── components/
-│   ├── App/
-│   │   ├── App.tsx
-│   │   └── App.css
-│   ├── Header/
-│   │   ├── Header.tsx
-│   │   └── Header.css
-│   ├── ToDoList/
-│   │   ├── ToDoList.tsx
-│   │   └── ToDoList.css
-│   ├── ToDoItem/
-│   │   ├── ToDoItem.tsx
-│   │   └── ToDoItem.css
-│   ├── AddToDo/
-│   │   ├── AddToDo.tsx
-│   │   └── AddToDo.css
-│   ├── Filter/
-│   │   ├── Filter.tsx
-│   │   └── Filter.css
-│   ├── Footer/
-│   │   ├── Footer.tsx
-│   │   └── Footer.css
-│   ├── ThemeToggle/
-│   │   ├── ThemeToggle.tsx
-│   │   └── ThemeToggle.css
-├── context/
-│   ├── ThemeContext.tsx
-├── hooks/
-│   └── useLocalStorage.ts
-├── styles/
-│   ├── global.css
-│   ├── light-theme.css
-│   └── dark-theme.css
-└── index.tsx
+## Expanding the ESLint configuration
 
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+});
+```
+
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react';
+
+export default tseslint.config({
+  // Set the react version
+  settings: { react: { version: '18.3' } },
+  plugins: {
+    // Add the react plugin
+    react,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended rules
+    ...react.configs.recommended.rules,
+    ...react.configs['jsx-runtime'].rules,
+  },
+});
+```

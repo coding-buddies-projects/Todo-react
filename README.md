@@ -4,7 +4,7 @@
 0. - [x] **means the task was competed;**
 
 
-#### Edit the file to take a task:
+***Edit the file to take a task:***
 <br/>
 If you take a task write your name/nickname in [], and add the link to your github in (). Also add this emoji :clock5:.
 <br/>

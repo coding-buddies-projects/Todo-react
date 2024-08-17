@@ -1,7 +1,13 @@
 # Todo-react
-Edit the file to take a task:
+
+0. - [ :clock5: ] - **means task was taken and still not completed;**
+0. - [x] **means the task was competed;**
+
+
+#### Edit the file to take a task:
 <br/>
 If you take a task write your name/nickname in [], and add the link to your github in (). Also add this emoji :clock5:.
+<br/>
 <br/>
 If the task was completed write "x" in [] instead of emoji.
 <br/>
@@ -14,25 +20,25 @@ Example:
 
 1. - [x] Set up the initial React project structure - [Alex](https://github.com/aleksandramuraveva)
 1. - [ ] Create App component logic - []()
-1. - [x] Create ToDoList component logic - [Havishya](https://github.com/havishya10)
-1. - [x] Create Header component logic - [Havishya](https://github.com/havishya10)
+1. - [ :clock5: ] Create ToDoList component logic - [Havishya](https://github.com/havishya10)
+1. - [ :clock5: ] Create Header component logic - [Havishya](https://github.com/havishya10)
 1. - [ ] Create ToDoItem component logic - []()
 1. - [ ] Create AddToDo form component logic - []()
 1. - [ ] Create Footer component logic - []()
 1. - [ ] Create Filter component logic - []()
 1. - [ ] Create App component logic - []()
-1. - [x] Create ThemeToggle component logic - [Havishya](https://github.com/havishya10) 
+1. - [ :clock5: ] Create ThemeToggle component logic - [Havishya](https://github.com/havishya10) 
 1. - [ ] Style App component using CSS - []()
 1. - [ ] Style ToDoList component using CSS - []()
-1. - [x] Style Header component using CSS - [Havishya](https://github.com/havishya10)
+1. - [ :clock5: ] Style Header component using CSS - [Havishya](https://github.com/havishya10)
 1. - [ ] Style ToDoItem component using CSS - []()
 1. - [ ] Style AddToDo form component using CSS - []()
 1. - [ ] Style Filter component using CSS - []()
 1. - [ ] Style Footer component using CSS - []()
-1. - [x] Style ThemeToggle component using CSS - [Havishya](https://github.com/havishya10)
+1. - [ :clock5: ] Style ThemeToggle component using CSS - [Havishya](https://github.com/havishya10)
 1. - [ ] Add local storage support to persist tasks - []()
 1. - [ ] Create a custom hook useLocalStorage for managing tasks - []()
-1. - [x] Implement ContexApi to manage light/dark theme - [Havishya](https://github.com/havishya10) <!-- I will use React.useState() to toggle the classes when switching themes -->
+1. - [ :clock5: ] Implement ContexApi to manage light/dark theme - [Havishya](https://github.com/havishya10) <!-- I will use React.useState() to toggle the classes when switching themes -->
 1. - [ ] Implement filtering options (e.g., all, active, completed) - []()
 1. - [ ] Write unit tests for components and hooks - []()
 1. - [ ] Set up CI/CD pipeline for automated testing and deployment - []()

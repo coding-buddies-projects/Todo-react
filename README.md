@@ -25,7 +25,7 @@ Example:
 1. - [ :clock5: ] Create ToDoItem component logic - [Noel](https://github.com/imanmaulana1)
 1. - [ :clock5: ] Create AddToDo form component logic - [Noel](https://github.com/imanmaulana1)
 1. - [ ] Create Footer component logic - []()
-1. - [ ] Create Filter component logic - []()
+1. - [ ] Create Filter component logic - [Francis](https://github.com/Francis7575)
 1. - [ ] Create App component logic - []()
 1. - [ :clock5: ] Create ThemeToggle component logic - [Havishya](https://github.com/havishya10) 
 1. - [ ] Style App component using CSS - []()

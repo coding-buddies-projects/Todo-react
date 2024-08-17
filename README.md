@@ -36,10 +36,10 @@ Example:
 1. - [ ] Style Filter component using CSS - []()
 1. - [ ] Style Footer component using CSS - []()
 1. - [ :clock5: ] Style ThemeToggle component using CSS - [Havishya](https://github.com/havishya10)
-1. - [ ] Add local storage support to persist tasks - []()
-1. - [ ] Create a custom hook useLocalStorage for managing tasks - []()
+1. - [ ] Add local storage support to persist tasks - [Francis](https://github.com/Francis7575)
+1. - [ ] Create a custom hook useLocalStorage for managing tasks - [Francis](https://github.com/Francis7575)
 1. - [ :clock5: ] Implement ContexApi to manage light/dark theme - [Havishya](https://github.com/havishya10) <!-- I will use React.useState() to toggle the classes when switching themes -->
-1. - [ ] Implement filtering options (e.g., all, active, completed) - []()
+1. - [ ] Implement filtering options (e.g., all, active, completed) - [Francis](https://github.com/Francis7575)
 1. - [ ] Write unit tests for components and hooks - []()
 1. - [ ] Set up CI/CD pipeline for automated testing and deployment - []()
 1. - [ ] Optimize performance and improve accessibility - []()

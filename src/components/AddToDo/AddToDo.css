@@ -1,0 +1,81 @@
+.form-wrapper {
+  max-width: 500px;
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #f9f8fe;
+  padding: 0.6rem 0.8rem;
+  border-radius: 12px;
+}
+
+.form-control {
+  flex: 1;
+}
+
+.form-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #717082;
+}
+
+.form-input::placeholder {
+  color: #bbbbbb;
+}
+
+.triple-dots {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.animation {
+  animation: wave 1s ease-in-out infinite;
+}
+
+.dot:first-child {
+  background-color: #fd99af;
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  background-color: #3fd4f4;
+  animation-delay: 0.1s;
+}
+
+.dot:last-child {
+  background-color: #fac608;
+  animation-delay: 0.2s;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,0 +1,74 @@
+li {
+  list-style-type: none;
+}
+
+p.complete{
+    text-decoration: line-through;
+    color: #bbbbbb;
+}
+
+.task-item {
+  max-width: 480px;
+  width: 90%;
+  height: 45px;
+  margin-inline: auto;
+  margin-top: 1.4rem; /* Remove this property if you're using gap on the parent */
+  padding-inline: 0.8rem;
+  color: #717082;
+  background-color: #f9f8fe;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item-cta {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #ca8bfe;
+  background-color: transparent;
+  border: 3px solid #bbbbbb;
+  transition:
+    border-color 0.2s ease,
+    transform 0.3s ease;
+}
+
+.item-cta:active {
+  transform: scale(0.85);
+}
+
+.item-cta:hover {
+  border-color: #a7a7a7;
+}
+
+.item-cta:focus,
+.item-cta:focus-visible {
+  outline: 0;
+}
+
+.item-cta.complete {
+  border-color: #ca8bfe;
+}
+
+.emoji {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+
+.emoji.complete {
+  opacity: 1;
+}
+
+.item-cta:hover .emoji {
+  opacity: 0.4;
+}

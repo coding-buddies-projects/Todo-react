@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import {Todo} from './types/types'
+import { Todo } from './types/types';
 // import Header from './components/Header';
 // import ToDoList from './components/ToDoList';
 // import Footer from './components/Footer';
@@ -29,14 +29,11 @@ function App() {
 
   return (
     <>
-
- 
       <p>uncomment when you add your component</p>
 
       {/*<Header addTodo={addTodo}/>*/}
       {/*<ToDoList todos={todos} setTodos={setTodos}/> removeTodo={removeTodo}*/}
       {/*<Footer/>*/}
-
     </>
   );
 }

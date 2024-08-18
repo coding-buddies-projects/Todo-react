@@ -1,6 +1,6 @@
 import React, { ChangeEvent, FormEvent, useState } from 'react';
-import { Todo } from '../../App';
 import { v4 as uuidv4 } from 'uuid';
+import { Todo } from '../../types/types';
 import './AddToDo.css';
 
 interface AddToDoProps {
@@ -18,7 +18,7 @@ function AddToDo({ addTask }: AddToDoProps) {
 
     const newTask: Todo = {
       id: uuidv4(),
-      task: input,
+      text: input,
       isCompleted: false,
     };
 
@@ -29,7 +29,7 @@ function AddToDo({ addTask }: AddToDoProps) {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
   };
-  
+
   const handleFocus = () => {
     setIsFocus(true);
   };

@@ -8,21 +8,6 @@ import AddToDo from './components/AddToDo/AddToDo';
 
 function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
-  const [text, setText] = useState<string>('');
-
-  const addTodo = () => {
-    if (text.trim().length) {
-      setTodos([
-        ...todos,
-        {
-          id: new Date().toISOString(),
-          text,
-          isCompleted: false,
-        },
-      ]);
-      setText('');
-    }
-  };
 
   const removeTodo = (todoId: string) => {
     setTodos(todos.filter((todo) => todo.id !== todoId));

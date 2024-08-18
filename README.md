@@ -19,7 +19,7 @@ Example:
 # React To-Do Project Tasks
 
 1. - [x] Set up the initial React project structure - [Alex](https://github.com/aleksandramuraveva)
-1. - [ :clock5: ] Create App component logic - [Alex](https://github.com/aleksandramuraveva)
+1. - [x] Create App component logic - [Alex](https://github.com/aleksandramuraveva)
 1. - [ :clock5: ] Create ToDoList component logic - [Havishya](https://github.com/havishya10)
 1. - [ :clock5: ] Create Header component logic - [Havishya](https://github.com/havishya10)
 1. - [ :clock5: ] Create ToDoItem component logic - [Noel](https://github.com/imanmaulana1)

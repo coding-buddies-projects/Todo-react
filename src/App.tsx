@@ -2,27 +2,13 @@ import { useState } from 'react';
 import './App.css';
 import { Todo } from './types/types';
 import AddToDo from './components/AddToDo/AddToDo';
+import ToDoItem from './components/ToDoItem/ToDoItem';
 // import Header from './components/Header';
 // import ToDoList from './components/ToDoList';
 // import Footer from './components/Footer';
 
 function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
-  const [text, setText] = useState<string>('');
-
-  const addTodo = () => {
-    if (text.trim().length) {
-      setTodos([
-        ...todos,
-        {
-          id: new Date().toISOString(),
-          text,
-          isCompleted: false,
-        },
-      ]);
-      setText('');
-    }
-  };
 
   const removeTodo = (todoId: string) => {
     setTodos(todos.filter((todo) => todo.id !== todoId));
@@ -32,6 +18,16 @@ function App() {
   // This function receives the todo object (parameter) from the AddToDo component
   const addTask = (todo: Todo) => {
     setTodos([...todos, todo]);
+  };
+
+  // Function to change status task
+  // This function toggles the 'isCompleted' status of a todo item based on its id
+  const toggleComplete = (id: string) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo,
+      ),
+    );
   };
 
   console.log(todos);
@@ -46,6 +42,23 @@ function App() {
           Therefore, for whoever is managing the header component, please put this component inside it.
       */}
       <AddToDo addTask={addTask} />
+
+      {/* 
+          This component is mapped inside the ToDoList component as its parent. Please move this component to the ToDoList component.
+          Receives the following props:
+          todo: an object representing the task details
+          toggleComplete: a function to handle the task completion toggle
+          index: the position of the task in the list
+
+      */}
+      {todos.map((todo, index) => (
+        <ToDoItem
+          key={todo.id}
+          todo={todo}
+          toggleComplete={toggleComplete}
+          index={index}
+        />
+      ))}
 
       {/*<Header addTodo={addTodo}/>*/}
       {/*<ToDoList todos={todos} setTodos={setTodos}/> removeTodo={removeTodo}*/}
